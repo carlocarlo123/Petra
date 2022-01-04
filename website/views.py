@@ -9,7 +9,7 @@ def about_us(request):
 	return render(request,'about_us.html',{})
 
 def services(request):
-	return render(request,'services.html',{})
+	return render(request,'Services.html',{})
 
 def industries(request):
 	return render(request,'Industries.html',{})
