@@ -1,0 +1,289 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title> PetraTech Solution </title>
+    <link rel="icon" href="{% static 'website/assets/images/logo_petra.ico' %}" >
+
+    <link rel="shortcut icon" href="{% static 'website/assets/images/fav.jpg' %}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/fontawsom-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/assets/css/style2.css' %}" />
+</head>
+
+<body>
+          <script type="text/javascript">
+ var vsid = "kc218274c66a81c";
+ (function() { 
+ var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+  vsjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.leadchatbot.com/vsa/chat.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);what
+ })();
+</script>
+
+    <!--################### Header Starts Here #######################--->
+    <div class="header-container container-fluid">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <img src="{% static 'website/assets/images/logo.png' %}" alt="">
+                        <button class="navbar-toggler d-lg-none d-md-block " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-9 d-none d-lg-block">
+                        <ul>
+                            <li><i class="far fa-envelope"></i> info@petratech.ca</li>
+                            <li><i class="fas fa-headphones-alt"></i> +1 514 967 2323</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-jk" class="header-bottom contaienr-fluid">
+            <div class="container">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'about_us'  %}">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'services' %}">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'industries' %}">Industries</a>
+                            </li>
+                            <!--
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'packages' %}">Our Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'latest_news' %}">Latest News</a>
+                            </li>
+                        -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'contact-us' %}">Contact Us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!--################### Slider Starts Here #######################--->
+
+     <div class="page-nav no-margin row">
+       <div class="container">
+           <div class="row">
+               <h2>Address</h2>
+               <ul>
+                   <li> <a href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a></li>
+                   <li><a href="{% url 'services' %}"><i class="fas fa-angle-double-right"></i> Services</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+
+        {% if email_address %}
+            <center color="Blue"><h3 color="Blue"> Thanks {{ name }}!</h3>
+            We receivd your email and will contact you shortly...</center>
+
+        {% endif %}
+       
+    
+
+       <div style="margin-top:0px;" class="row no-margin">
+        
+        <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.8262534740916!2d-73.58406788475033!3d45.63422657910326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8e1d5536a80c1%3A0x5b1135a21185ad33!2s11843%20Ave%20Louis-Sicotte%2C%20Montreal%2C%20QC%20H1E%203N3%2C%20Canada!5e0!3m2!1sen!2slb!4v1640515505165!5m2!1sen!2slb" width="1600" height="450" style="border:0;" allowfullscreen="True" loading="lazy"></iframe>
+
+
+      </div>
+
+      <div class="row contact-rooo no-margin">
+        <div class="container">
+           <div class="row">
+               
+          
+            <div style="padding:20px" class="col-sm-6">
+            <h2 style="font-size:18px">Contact Form</h2>
+            <form action="{% url 'contact-us' %}" method="post">
+                {% csrf_token %}
+                <div class="row cont-row">
+                    <div  class="col-sm-3"><label>Enter Name </label><span>:</span></div>
+                    <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm"  ></div>
+                </div>
+                <div  class="row cont-row">
+                    <div  class="col-sm-3"><label>EmailAddress </label><span>:</span></div>
+                    <div class="col-sm-8"><input type="text" name="name-email" placeholder="Enter Email Address" class="form-control input-sm"  ></div>
+                </div>
+                 <div  class="row cont-row">
+                    <div  class="col-sm-3"><label>Mobile Number</label><span>:</span></div>
+                    <div class="col-sm-8"><input type="text" name="name-mobile" placeholder="Enter Mobile Number" class="form-control input-sm"  ></div>
+                </div>
+                 <div  class="row cont-row">
+                    <div  class="col-sm-3"><label>Enter Message</label><span>:</span></div>
+                    <div class="col-sm-8">
+                      <textarea rows="5" name="textarea" placeholder="Enter Your Message" class="form-control input-sm"></textarea>
+                    </div>
+                </div>
+                 <div style="margin-top:10px;" class="row">
+                    <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                    <div class="col-sm-8">
+                     <button class="btn btn-success btn-sm">Send Message</button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-sm-6">
+                    
+                  <div style="margin:50px" class="serv"> 
+                
+               
+             
+                              
+              
+          <h2 style="margin-top:10px;">Address</h2>
+
+    11843 av.Louis-Sicotte<br>
+    Monteral<br>
+    Qc-H1E3N3<br>
+    Phone:+1 514 967 2323<br>
+    Email:info@petratech.ca<br>
+    Website:www.petratech.ca<br>
+  
+           </div>    
+                
+             
+         </div>
+
+            </div>
+        </div>
+        
+      </div>
+
+
+  
+    
+
+    <!--################### Footer Starts Here #######################--->
+    <footer id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 about">
+                <h2>About Us</h2>
+                <p>PetraTech, as a quality software outsourcing company, we help clients all over the world to reach their goals. Our transparency and full involvement add value and help clients get the right products.. </p>
+                <!--
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="addet">
+                        BlueDart
+                        Marthandam (K.K District)
+                        Tamil Nadu, IND 
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="addet">
+                        info@smarteyeapps.com <br>
+                        sales@smarteyeapps.com
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                         <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="addet">
+                        +23 323 43434 <br>
+                        +1 3232 434 55
+                    </div>
+                </div>
+            -->
+            </div>
+        
+            <!--
+            <div class="col-md-3 fotblog">
+                <h2>From latest Blog</h2>
+                <div class="blohjb">
+                    <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
+                    <span>22-1-2019</span>
+                </div>
+                <div class="blohjb">
+                    <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
+                    <span>22-1-2019</span>
+                </div>
+                <div class="blohjb">
+                    <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
+                    <span>22-1-2019</span>
+                </div>
+            </div>
+        -->
+            <div class="col-md-3 glink">
+                <ul>
+                    <li><a href="{% url 'home' %}"><i class="fas fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="{% url 'about_us' %}"><i class="fas fa-angle-double-right"></i>About Us</a></li>
+                    <li><a href="{% url 'services' %}"><i class="fas fa-angle-double-right"></i>Services</a></li>
+                    <li><a href="{% url 'blog' %}"><i class="fas fa-angle-double-right"></i>Blog</a></li>
+                    <li><a href="{% url 'Gallery' %}"><i class="fas fa-angle-double-right"></i>Gallery</a></li>
+                    <li><a href="{% url 'contact-us' %}"><i class="fas fa-angle-double-right"></i>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 tags">
+                <h2>Easy Tags</h2>
+                <ul>
+                    <li>Finance</li>
+                    <li>Web Design</li>
+                    <li>Internet Pro</li>
+                    <li>Node Js</li>
+                    <li>Java Swing</li>
+                    <li>Angular Js</li>
+                    <li>Vue Js</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy">
+            <div class="container">
+                <a href="https://www.smarteyeapps.com/">2021 &copy; All Rights Reserved | Designed and Developed by PetraTech Solutions</a>
+                <!--
+                <span>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+        </span>
+    -->
+            </div>
+
+        </div>
+
+</body>
+<script src="{% static 'website/assets/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'website/assets/js/popper.min.js' %}"></script>
+<script src="{% static 'website/assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'website/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+<script src="{% static 'website/assets/js/script.js' %}"></script>
+
+
+</html>

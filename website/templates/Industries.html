@@ -1,0 +1,696 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> PetraTech Solution</title>
+    <link rel="icon" href="{% static 'website/assets/images/logo_petra.ico' %}" >
+    <link rel="shortcut icon" href="{% static 'website/assets/images/fav.jpg' %}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/fontawsom-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/assets/css/style2.css' %}" />
+</head>
+
+<body>
+          <script type="text/javascript">
+ var vsid = "kc218274c66a81c";
+ (function() { 
+ var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+  vsjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.leadchatbot.com/vsa/chat.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);what
+ })();
+</script>
+
+    <!--################### Header Starts Here #######################--->
+    <div class="header-container container-fluid">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <img src="{% static 'website/assets/images/logo.png' %}" alt="">
+                        <button class="navbar-toggler d-lg-none d-md-block " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-9 d-none d-lg-block">
+                        <ul>
+                             <li><i class="far fa-envelope"></i> info@petratech.ca</li>
+                            <li><i class="fas fa-headphones-alt"></i> +1 514 967 2323</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-jk" class="header-bottom contaienr-fluid">
+            <div class="container">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'services' %}">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'industries' %}">Industries</a>
+                            </li>
+                            <!--
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'packages' %}">Our Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'latest_news' %}">Latest News</a>
+                            </li>
+                        -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'contact-us' %}">Contact Us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!--################### Slider Starts Here #######################--->
+
+     <div class="page-nav no-margin row">
+       <div class="container">
+           <div class="row">
+               <h2>Industries</h2>
+               <ul>
+                   <li> <a href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a></li>
+                   <li><a href="{% url 'industries' %}"><i class="fas fa-angle-double-right"></i> Industries</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+
+    
+       
+    
+
+ <!--  ************************* Gallery Starts Here ************************** -->
+        <div class="gallery">    
+           <div class="container">
+              <div class="row">
+                
+
+        <div class="gallery-filter d-none d-sm-block">
+            <button class="btn btn-default filter-button" data-filter="all"><a href="#" class="button_1">Enterprise Management </a></button>
+            <button class="btn btn-default filter-button" data-filter="hdpe"><a href="#" class="
+            button_2">E-commerce </a></button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle"><a href="#" class="button_3">Social Media & Entertainment </a></button>
+            <button class="btn btn-default filter-button"data-filter="irrigation"><a href="#" class="button">Fintech Solutions </a></button>
+
+            <button class="btn btn-default filter-button"data-filter="irrigation"><a href="#"
+                class="button_5">AI Application </a></button>
+                
+
+            <button class="btn btn-default filter-button"data-filter="irrigation"><a href="#" class="button_6">Healthcare </a></button>
+
+            <button class="btn btn-default filter-button"data-filter="irrigation"><a href="#" class="button_7">Real Estate </a></button>
+                
+
+            <button class="btn btn-default filter-button"data-filter="irrigation"><a href="#" class="button_8">Transportation </a></button>
+
+            <button class="btn btn-default filter-button"data-filter="irrigation"><a href="#" class="button_9">Education </a></button>
+
+            <button class="btn btn-default filter-button"data-filter="irrigation"><a href="#" class="button_10">Lifestyle </a></button>
+          
+        </div>
+        <div class="popup" >
+                    
+                    <h3></h3>
+                    <p><b>PetraTech understands the hardships that enterprises face upon innovating the current traditional financial methods.</b></p><p><b> With the right languages and frameworks, we get your worries out of the way and offer scalable products</b></p>
+                
+                </div>
+
+         <div class="popup_1" >
+                    
+                    <h3></h3>
+                    <p><b>Businesses management solution is one of our strengths.</b></p><p><b>The approach we suggest helps enterprises run the system smoothly, as well as minimize costs.</b></p>
+                
+                </div>
+                
+        <div class="popup_2" >
+                    
+                    <h3></h3>
+                    <p><b>The support of technology definitely makes things a lot easier for both buyers and sellers.</b></p><p><b> In fact, websites or Mobile Apps that we built helped businesses find a better solution for managing and boosting sales. </b></p>
+                
+                </div>
+
+        <div class="popup_3" >
+                    
+                    <h3></h3>
+                    <p><b>Many ideas have been integrated to connect people of different places or backgrounds together.</b></p><p><b>  So that, PetraTech commits to developing mobile applications pursuing your creative vision.</b></p>
+                
+                </div>
+
+
+
+        <div class="popup_5" >
+                    
+                    <h3></h3>
+                    <p><b>Our tailor-made AI software can help businesses increase sales, detect fraud, improve customer experience.</b></p><p><b> as well as automate workflows and provide predictive analytics. </b></p>
+                
+                </div>
+
+        <div class="popup_6" >
+                    
+                    <h3></h3>
+                    <p><b>With up-to-date technology and intense experience, we have worked closely with businesses to create software for healthcare.</b></p><p><b> As the result, these products increase convenience upon using healthcare services. </b></p>
+                
+                </div>
+
+
+        <div class="popup_7" >
+                    
+                    <h3></h3>
+                    <p><b>With the help of technology, people can well manage Real Estate.</b></p><p><b> Especially, PetraTech is proud to be your partner in these innovative projects. </b></p>
+                
+                </div>
+
+        <div class="popup_8" >
+                    
+                    <h3></h3>
+                    <p><b>From booking car to managing cars and taxis for branding purpose, we overcome problems and put forth solutions for your business.</b></p>
+                
+                </div>
+
+          <div class="popup_9" >
+                    
+                    <h3></h3>
+                    <p><b>E-book or E-learning is a promising industry.In other word, thanks to these applications, time is well-managed and distance is not a problem anymore. </b></p>
+                
+                </div>
+          <div class="popup_10" >
+                    
+                    <h3></h3>
+                    <p><b>Software products built for this field help users enjoy their life more. By actively involving in sports activity. Or seeking peace and relaxation in spa. </b></p>
+                
+                </div>
+        
+        
+
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="{% static 'website/assets/images/gallery/gallery_01.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="{% static 'website/assets/images/gallery/gallery_02.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="{% static 'website/assets/images/gallery/gallery_03.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="{% static 'website/assets/images/gallery/gallery_04.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="{% static 'website/assets/images/gallery/gallery_05.jpg' %}" class="img-responsive">
+            </div>
+
+          
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="{% static 'website/assets/images/gallery/gallery_06.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="{% static 'website/assets/images/gallery/gallery_06.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="{% static 'website/assets/images/gallery/gallery_08.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="{% static 'website/assets/images/gallery/gallery_09.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="{% static 'website/assets/images/gallery/gallery_10.jpg' %}" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="{% static 'website/assets/images/gallery/gallery_11.jpg' %}" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="{% static 'website/assets/images/gallery/gallery_12.jpg' %}" class="img-responsive">
+            </div>
+        </div>
+    </div>
+       
+       
+       </div>
+    
+
+
+  
+    
+
+    <!--################### Footer Starts Here #######################--->
+    <!--
+    <footer id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 about">
+                <h2>About Us</h2>
+                <p>Phasellus scelerisque ornare nisl sit amet pulvinar. Nunc non scelerisque augue. Proin et sollicitudin velit. </p>
+                
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="addet">
+                        BlueDart
+                        Marthandam (K.K District)
+                        Tamil Nadu, IND 
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="addet">
+                        info@smarteyeapps.com <br>
+                        sales@smarteyeapps.com
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                         <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="addet">
+                        +23 323 43434 <br>
+                        +1 3232 434 55
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 fotblog">
+                <h2>From latest Blog</h2>
+                <div class="blohjb">
+                    <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
+                    <span>22-1-2019</span>
+                </div>
+                <div class="blohjb">
+                    <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
+                    <span>22-1-2019</span>
+                </div>
+                <div class="blohjb">
+                    <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
+                    <span>22-1-2019</span>
+                </div>
+            </div>
+            <div class="col-md-3 glink">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="about_us.html"><i class="fas fa-angle-double-right"></i>About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-angle-double-right"></i>Services</a></li>
+                    <li><a href="blog.html"><i class="fas fa-angle-double-right"></i>Blog</a></li>
+                    <li><a href="pricing.html"><i class="fas fa-angle-double-right"></i>Gallery</a></li>
+                    <li><a href="contact_us.html"><i class="fas fa-angle-double-right"></i>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 tags">
+                <h2>Easy Tags</h2>
+                <ul>
+                    <li>Finance</li>
+                    <li>Web Design</li>
+                    <li>Internet Pro</li>
+                    <li>Node Js</li>
+                    <li>Java Swing</li>
+                    <li>Angular Js</li>
+                    <li>Vue Js</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+-->
+<div class="copy">
+            <div class="container">
+                <a href="https://www.smarteyeapps.com/">2021 &copy; All Rights Reserved | Designed and Developed by PetraTech Solutions</a>
+                
+                <span>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+        </span>
+            </div>
+
+        </div>
+
+</body>
+<script src="{% static 'website/assets/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'website/assets/js/popper.min.js' %}"></script>
+<script src="{% static 'website/assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'website/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+<script src="{% static 'website/assets/js/script.js' %}"></script>
+<style>
+        center
+         {
+            font-size: 30px;
+            color: green;
+        }
+  
+        .popup {
+            display: none;
+            width: 500px;
+            border:  solid green 3px
+        }
+    </style>
+<script>
+        $flag = -1;
+  
+        $("a.button").hover(
+            function () {
+                $("div.popup").attr("style", "display:block");
+            },
+            function () {
+                if ($flag == -1) {
+                    $("div.popup").attr("style", "display:none");
+                }
+            }
+        );
+  
+        $("a.button").click(function () {
+            $flag = 1;
+        });
+    </script>
+<!-- enterprise-->
+<style>
+    center
+     {
+        font-size: 30px;
+        color: green;
+    }
+
+    .popup_1 {
+        display: none;
+        width: 500px;
+        border:  solid green 3px
+    }
+</style>
+<script>
+    $flag = -1;
+
+    $("a.button_1").hover(
+        function () {
+            $("div.popup_1").attr("style", "display:block");
+        },
+        function () {
+            if ($flag == -1) {
+                $("div.popup_1").attr("style", "display:none");
+            }
+        }
+    );
+
+    $("a.button_1").click(function () {
+        $flag = 1;
+    });
+</script>
+<!-- e-c0mmerece-->
+<style>
+    center
+     {
+        font-size: 30px;
+        color: green;
+    }
+
+    .popup_2 {
+        display: none;
+        width: 500px;
+        border:  solid green 3px
+    }
+</style>
+<script>
+    $flag = -1;
+
+    $("a.button_2").hover(
+        function () {
+            $("div.popup_2").attr("style", "display:block");
+        },
+        function () {
+            if ($flag == -1) {
+                $("div.popup_2").attr("style", "display:none");
+            }
+        }
+    );
+
+    $("a.button_2").click(function () {
+        $flag = 1;
+    });
+</script>
+<!-- Social Media-->
+<style>
+    center
+     {
+        font-size: 30px;
+        color: green;
+    }
+
+    .popup_3 {
+        display: none;
+        width: 500px;
+        border:  solid green 3px
+    }
+</style>
+<script>
+    $flag = -1;
+
+    $("a.button_3").hover(
+        function () {
+            $("div.popup_3").attr("style", "display:block");
+        },
+        function () {
+            if ($flag == -1) {
+                $("div.popup_3").attr("style", "display:none");
+            }
+        }
+    );
+
+    $("a.button_3").click(function () {
+        $flag = 1;
+    });
+</script>
+
+<!-- Ai-->
+<style>
+    center
+     {
+        font-size: 30px;
+        color: green;
+    }
+
+    .popup_5 {
+        display: none;
+        width: 500px;
+        border:  solid green 3px
+    }
+</style>
+<script>
+    $flag = -1;
+
+    $("a.button_5").hover(
+        function () {
+            $("div.popup_5").attr("style", "display:block");
+        },
+        function () {
+            if ($flag == -1) {
+                $("div.popup_5").attr("style", "display:none");
+            }
+        }
+    );
+
+    $("a.button_5").click(function () {
+        $flag = 1;
+    });
+</script>
+<!-- health care -->
+<style>
+    center
+     {
+        font-size: 30px;
+        color: green;
+    }
+
+    .popup_6 {
+        display: none;
+        width: 500px;
+        border:  solid green 3px
+    }
+</style>
+<script>
+    $flag = -1;
+
+    $("a.button_6").hover(
+        function () {
+            $("div.popup_6").attr("style", "display:block");
+        },
+        function () {
+            if ($flag == -1) {
+                $("div.popup_6").attr("style", "display:none");
+            }
+        }
+    );
+
+    $("a.button_6").click(function () {
+        $flag = 1;
+    });
+</script>
+<!-- real estate-->
+<style>
+    center
+     {
+        font-size: 30px;
+        color: green;
+    }
+
+    .popup_7 {
+        display: none;
+        width: 500px;
+        border:  solid green 3px
+    }
+</style>
+<script>
+    $flag = -1;
+
+    $("a.button_7").hover(
+        function () {
+            $("div.popup_7").attr("style", "display:block");
+        },
+        function () {
+            if ($flag == -1) {
+                $("div.popup_7").attr("style", "display:none");
+            }
+        }
+    );
+
+    $("a.button_7").click(function () {
+        $flag = 1;
+    });
+</script>
+<!-- trans-->
+<style>
+    center
+     {
+        font-size: 30px;
+        color: green;
+    }
+
+    .popup_8 {
+        display: none;
+        width: 500px;
+        border:  solid green 3px
+    }
+</style>
+<script>
+    $flag = -1;
+
+    $("a.button_8").hover(
+        function () {
+            $("div.popup_8").attr("style", "display:block");
+        },
+        function () {
+            if ($flag == -1) {
+                $("div.popup_8").attr("style", "display:none");
+            }
+        }
+    );
+
+    $("a.button_8").click(function () {
+        $flag = 1;
+    });
+</script>
+
+<!-- Education-->
+<style>
+    center
+     {
+        font-size: 30px;
+        color: green;
+    }
+
+    .popup_9 {
+        display: none;
+        width: 500px;
+        border:  solid green 3px
+    }
+</style>
+<script>
+    $flag = -1;
+
+    $("a.button_9").hover(
+        function () {
+            $("div.popup_9").attr("style", "display:block");
+        },
+        function () {
+            if ($flag == -1) {
+                $("div.popup_9").attr("style", "display:none");
+            }
+        }
+    );
+
+    $("a.button_9").click(function () {
+        $flag = 1;
+    });
+</script>
+<!-- Lifestyle-->
+<style>
+    center
+     {
+        font-size: 30px;
+        color: green;
+    }
+
+    .popup_10 {
+        display: none;
+        width: 500px;
+        border:  solid green 3px
+    }
+</style>
+<script>
+    $flag = -1;
+
+    $("a.button_10").hover(
+        function () {
+            $("div.popup_10").attr("style", "display:block");
+        },
+        function () {
+            if ($flag == -1) {
+                $("div.popup_10").attr("style", "display:none");
+            }
+        }
+    );
+
+    $("a.button_10").click(function () {
+        $flag = 1;
+    });
+</script>
+
+
+
+</html>

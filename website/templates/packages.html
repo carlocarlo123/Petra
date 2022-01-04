@@ -1,0 +1,366 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> PetraTech Solution </title>
+    <link rel="icon" href="{% static 'website/assets/images/logo_petra.ico' %}" >
+    <link rel="shortcut icon" href="{% static 'website/assets/images/fav.jpg">
+    <link rel="stylesheet" href="{% static 'website/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/fontawsom-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/assets/css/style2.css' %}" />
+</head>
+
+<body>
+          <script type="text/javascript">
+ var vsid = "kc218274c66a81c";
+ (function() { 
+ var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+  vsjs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.leadchatbot.com/vsa/chat.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);what
+ })();
+</script>
+
+    <!--################### Header Starts Here #######################--->
+    <div class="header-container container-fluid">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <img src="{% static 'website/assets/images/logo.png' %}" alt="">
+                        <button class="navbar-toggler d-lg-none d-md-block " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-9 d-none d-lg-block">
+                        <ul>
+                            <li><i class="far fa-envelope"></i> Sales@smarteyeapps.com</li>
+                            <li><i class="fas fa-headphones-alt"></i> +189 8162 9287</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-jk" class="header-bottom contaienr-fluid">
+            <div class="container">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'services' %}">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'industries' %}">Industries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'packages' %}">Our Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'home' %}">Latest News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'home' %}">Contact Us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!--################### Slider Starts Here #######################--->
+
+     <div class="page-nav no-margin row">
+       <div class="container">
+           <div class="row">
+               <h2>Our Packages</h2>
+               <ul>
+                   <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
+                   <li><i class="fas fa-angle-double-right"></i> Packages</li>
+               </ul>
+           </div>
+       </div>
+   </div>
+
+    
+       
+    
+
+<!--################### Pricing Starts Here #######################--->
+    
+     <section id="price" class="price-tab pp-top container-fluid">
+        <div class="container">
+           
+            <div class="row">
+               
+                <div class="col-md-4">
+                    <div class="product-box">
+                        <div class="product-popular">
+                            Most Popular
+                        </div>
+                        <div class="product-price">
+                            <div class="rokij"> $189 <p class="term"> / month</p></div>
+                            
+                        </div>
+                        <div class="product-features">
+                            
+                            <ul class="smal">
+                               
+                                <li>
+                                    Powered by cPanel®
+                                </li>
+                                <li>
+                                    Dedicated IP Address
+                                </li>
+                                <li>
+                                    99.95% Uptime SLA
+                                </li>
+                                <li>
+                                    1000 Mbit Uplink
+                                </li>
+                                <li>
+                                    <strong>10</strong> Hosted Domains
+                                </li>
+                                <li>
+                                    <strong>25 GB</strong> RAID 10 Storage
+                                </li>
+                                <li>
+                                    <strong>200 GB</strong> Premium Bandwidth
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-order">
+                            <a class="btn btn-success" href="products-cloud-hosting.html#cloud-starter-monthly">
+                                <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-box ultimate">
+                        <div class="product-popular ppo">
+                            Most Popular
+                        </div>
+                        
+                        <div class="product-price">
+                            <div class="rokij">$389 <p class="term"> / month</p></div>
+                            
+                        </div>
+                        <div class="product-features">
+                           
+                            <ul class="smal">
+                                <li>
+                                    Powered by cPanel®
+                                </li>
+                                <li>
+                                    Dedicated IP Address
+                                </li>
+                                <li>
+                                    99.95% Uptime SLA
+                                </li>
+                                <li>
+                                    1000 Mbit Uplink
+                                </li>
+                                <li>
+                                    <strong>10</strong> Hosted Domains
+                                </li>
+                                <li>
+                                    <strong>25 GB</strong> RAID 10 Storage
+                                </li>
+                                <li>
+                                    <strong>200 GB</strong> Premium Bandwidth
+                                </li>
+                                <li>
+                                    Unlimied Emaills
+                                </li>
+                                <li>
+                                   Premium Support
+                                </li>
+                                <li>
+                                    Daily Backup
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-order">
+                            <a class="btn btn-success" href="products-cloud-hosting.html#cloud-starter-monthly">
+                                <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-box">
+                        <div class="product-popular">
+                            Most Popular
+                        </div>
+                        <div class="product-price">
+                            <div class="rokij">$689<p class="term"> / month</p></div>
+                        </div>
+                        <div class="product-features">
+                            
+                            <ul class="smal">
+                                <li>
+                                    Powered by cPanel®
+                                </li>
+                                <li>
+                                    Dedicated IP Address
+                                </li>
+                                <li>
+                                    99.95% Uptime SLA
+                                </li>
+                                <li>
+                                    1000 Mbit Uplink
+                                </li>
+                                 <li>
+                                    <strong>10</strong> Hosted Domains
+                                </li>
+                                <li>
+                                    <strong>25 GB</strong> RAID 10 Storage
+                                </li>
+                                <li>
+                                    <strong>200 GB</strong> Premium Bandwidth
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-order">
+                            <a class="btn btn-success" href="products-cloud-hosting.html#cloud-starter-monthly">
+                                <i class="fas fa-shopping-cart icon-left"></i>Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+  
+    
+
+    <!--################### Footer Starts Here #######################--->
+    <!--rvices Starts Here #######################--->
+
+   <footer id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 about">
+                <h2>About Us</h2>
+                <p>PetraTech, as a quality software outsourcing company, we help clients all over the world to reach their goals. Our transparency and full involvement add value and help clients get the right products.. </p>
+                <!--
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="addet">
+                        BlueDart
+                        Marthandam (K.K District)
+                        Tamil Nadu, IND 
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="addet">
+                        info@smarteyeapps.com <br>
+                        sales@smarteyeapps.com
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                         <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="addet">
+                        +23 323 43434 <br>
+                        +1 3232 434 55
+                    </div>
+                </div>
+            -->
+            </div>
+        
+            <!--
+            <div class="col-md-3 fotblog">
+                <h2>From latest Blog</h2>
+                <div class="blohjb">
+                    <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
+                    <span>22-1-2019</span>
+                </div>
+                <div class="blohjb">
+                    <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
+                    <span>22-1-2019</span>
+                </div>
+                <div class="blohjb">
+                    <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
+                    <span>22-1-2019</span>
+                </div>
+            </div>
+        -->
+            <div class="col-md-3 glink">
+                <ul>
+                    <li><a href="{% url 'home' %}"><i class="fas fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="{% url 'about_us' %}"><i class="fas fa-angle-double-right"></i>About Us</a></li>
+                    <li><a href="{% url 'services' %}"><i class="fas fa-angle-double-right"></i>Services</a></li>
+                    <li><a href="{% url 'blog' %}"><i class="fas fa-angle-double-right"></i>Blog</a></li>
+                    <li><a href="{% url 'Gallery' %}"><i class="fas fa-angle-double-right"></i>Gallery</a></li>
+                    <li><a href="{% url 'contact-us' %}"><i class="fas fa-angle-double-right"></i>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 tags">
+                <h2>Easy Tags</h2>
+                <ul>
+                    <li>Finance</li>
+                    <li>Web Design</li>
+                    <li>Internet Pro</li>
+                    <li>Node Js</li>
+                    <li>Java Swing</li>
+                    <li>Angular Js</li>
+                    <li>Vue Js</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy">
+            <div class="container">
+                <a href="https://www.smarteyeapps.com/">2021 &copy; All Rights Reserved | Designed and Developed by PetraTech Solutions</a>
+                <!--
+                <span>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+        </span>
+    -->
+            </div>
+
+        </div>
+</body>
+<script src="{% static 'website/assets/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'website/assets/js/popper.min.js' %}"></script>
+<script src="{% static 'website/assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'website/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+<script src="{% static 'website/assets/js/script.js' %}"></script>
+
+
+</html>
